@@ -1,98 +1,130 @@
+
 import React from 'react'
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import PlayStore from "../assets/Play-store.png";
-import AppStore from "../assets/appStore.png";
-import { ImLinkedin2 } from "react-icons/im";
-import { FaFacebookF } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
-import { AiOutlineYoutube } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
-const Footer = () => {
-  return (
-    <footer className='w-full flex items-center justify-center '>
-    <section className='mt-16 pt-4 justify-center items-center' >
-      <div className='flex justify-center items-center flex-col md:flex-row md:justify-between' >      
-         <div className='w-[30%] flex flex-col '>
-         <h1 className="text-[2.36875rem] leading-[1.4] pb-[16px] text-[#0b3558] font-extrabold">Easy
-         <br></br><label className=" text-[#006bff]" for="deliveryinp"> ahead</label></h1>
-         <p className='text-xl text-[#33495a] '>We take the work out of connecting with others so you can accomplish more.</p>
-
-  <div className='w-full font-bold justify-between hidden md:flex md:flex-col'>
-   
-    <div className='flex mt-14 border rounded-lg shadow-sm p-4 justify-between text-xl'>
-      <p>English</p>
-      <MdKeyboardArrowDown className='text-2xl font-bold'/>
-    </div>
-    <div className='flex mt-14 '>
-      <img src={PlayStore}  width={150} />
-      <img src={AppStore} width={160} />
-    </div>
-    <div className='flex gap-10 mt-20 text-2xl mb-8'>
-      <BsTwitter/>
-      <FaFacebookF/>
-      <BsInstagram/>
-      <ImLinkedin2 />
-      <AiOutlineYoutube/>
-    </div>
-  </div>
-    
-       
-       
-       </div >
-       <div className="w-[60%] grid grid-cols-2 md:grid-cols-3 gap-8">
-       <div >
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'> About</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> About Calendly</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Contact Sales</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Newsroom</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Careers</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Security</div>
-       </div>
-       <div >
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'>Solutions</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]' > Customer Success</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Sales</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Recruiting</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Information Technology</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Marketing</div>
-
-       </div>
-       <div >
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'> Popular Features</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Embed Calendly</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Availability</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Sending Notifications</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Using Calendly Mobile</div>
+import logo1 from "../assets/AppStore-15f01eefb2013206cc7e26d98fbe95fb.svg"
+import logo2 from "../assets/google-play-badge-logo-svgrepo-com.svg"
+import fac from "../assets/facebook.svg"
+import ing from "../assets/instagram.svg"
+import link from "../assets/linkedin.svg"
+import twitt from "../assets/twitter.svg"
+import you from "../assets/youtube.svg"
+    const Footer = () => {
+      return (
+        <footer className='flex items-center max-gg:flex-wrap-reverse  justify-center w-full  '>
+          
+           <section className='  mt-[45px] pt-[20px] px-[30px] ' >
+           
+             <div className='footer-section max-md:mt-[-65px] max-gg:flex-col flex justify-between max-gg:w-full  m-0 p-0 box-border scroll-smooth '>      
+             
+                <div className='footerLeft w-[32%] max-gg:w-full m-0 p-0 font-poppins box-border scroll-smooth '>
+               
+                 <h1 className="footereasy text-left mt-2 text-[35px] leading-[1.2] pb-[20px] text-[#0b3558]  font-poppins   font-extrabold">Easy
+                <br></br><label className=" text-[#006bff]" for="deliveryinp"> ahead</label></h1>
+                <p className='text-[16px] p-0 mt-6 leading-[1.5]   font-light font-poppins text-[#0b3558] max-gg:min-w-[300px] max-gg:mx-au '>We take the work out of connecting with others so you can accomplish more.</p>
+                <br></br>
+                <br></br>
+               <select name="country" className=' max-gg:hidden py-[10px] mt-1 px-[5px] w-full h-[50px]  hover:text-[#066bff]  transition-all duration-200 ease-linear  rounded-md outline-none cursor-pointer font-poppins border-[0.5px] border-solid   border-[#cfcdcd]  font-semibold' >
+               <option value="eng" >English (US)</option>
+              <option value="deu">Deutsch</option>
+              <option value="esp">Espanol</option>
+              <option value="fran">France</option>
+              <option value="port">Portugues</option>
+              </select>
+              <div className='flex mt-[30px] max-gg:hidden'>
+              <img className=" cursor-pointer align-middle w-[126px] mr-1" src={logo1}alt=""/>
+              <img className="cursor-pointer align-middle w-[126px] " src={logo2} alt="" />
          
-       </div>
-       <div>
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'>Support</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'>Help Center</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'>Video Tutorials</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'>Cookie Settings</div>
-       </div>
-       <div>
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'> Add-Ons</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Download for Chrome</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Download for Firefox</div>
-       </div>
-       <div>
-         <div className='p-[10px] text-[#0b3558] text-xl font-extrabold'> Developers</div>
-         <div className='p-[10px] text-[#0b3558] text-[1rem]'> Developer Tools</div>
-       </div>
-     </div>
-    </div>
+              </div>
     
-     <div className="flex justify-center sm:justify-between mt-16 mb-8">
-       <label for="" className='m-[7px] text-[#476788] leading-[1.5] text-[0.75rem] inline-block cursor-default'>Copyright Calendly 2022</label>
-       <label for="" className='m-[7px] text-[#476788] leading-[1.5] text-[0.75rem] inline-block cursor-default'>Privacy / Terms and Conditions</label>
-     </div>
-   
- </section>
- </footer>
+              <div className='w-full flex mt-4 items-center gap-[24px] max-gg:hidden'>
+              <img src={twitt} className=' cursor-pointer'></img>
+              <img src={fac} className=' cursor-pointer'></img>
+              <img src={ing} className=' cursor-pointer'></img>
+              <img src={link} className=' cursor-pointer'></img>
+              <img src={you} className=' cursor-pointer'></img>
+              </div>
+             
+              <br></br>
+              <br></br>
+              <br></br>          
+            
+              </div>
+              <div className="footerRight w-[63%] max-gg:w-full  grid grid-cols-3 max-vg:grid-cols-2 max-gg:grid-cols-3 max-gg:gap-x-3 max-yg:grid-cols-2 max-bg:grid-cols-1  max-gg:ml-[-55px] max-vg:pl-12 max-gg:mt-[-80px] gap-[10px]  box-border">
+              <div class="footerul ">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33]  pb-6 '> <b>About</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer'> About Calendly</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Contact Sales</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Newsroom</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Careers</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Security</div>
+              </div>
+              <div class="footerul">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33] pb-6'><b>Solutions</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer' > Customer Success</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Sales</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Recruiting</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1] cursor-pointer'> Information Technology</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'> Marketing</div>
+    
+              </div>
+              <div class="footerul ">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33] pb-6'><b> Popular Features</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer pb-6'> Embed Calendly</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer pb-6'> Availability</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer pb-6'> Sending  Notification</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer pb-6'> Using Calendly Mobile</div>
+              </div>
+              <div class="footerul mt-[-100px] max-vg:mt-1">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33] pb-6'><b>Support</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[0.9] cursor-pointer'>Help Center</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer'>Video Tutorials</div>
+              </div>
+              <div class="footerul mt-[-100px] max-vg:mt-1">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33] pb-6'> <b>Add-Ons</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer'> Download for Chrome</div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer'> Download for Firefox</div>
+              </div>
+              <div class="footerul mt-[-100px] max-gg:mt-1">
+                <div className='p-[10px] text-[#0b3558] text-[22px] font-poppins font-[580px] leading-[1.33] pb-6'> <b>Developers</b></div>
+                <div className='p-[10px] text-[#0b3558] text-[1rem] leading-[1.1]  cursor-pointer'> Developer Tools</div>
+              </div>
+            </div>
+           
+           </div>
+           <div className="flex justify-between   box-border w-full gap-[16px] pb-[70px] mt-[-40px] max-vg:mt-20 max-gg:flex-col">
+           <label for="" className='m-[7px] text-[#476788] leading-[1.5] text-[0.75rem] inline-block cursor-default'>Copyright Calendly 2022</label>
+           
+           <label for="" className='m-[7px] text-[#476788] leading-[1.5] text-[0.75rem] inline-block cursor-default max-gg:mt-[-2px]'>Privacy / Terms and Conditions</label>
 
-  )
-}
+
+           
+         </div>
+         <select name="country" className=' gg:hidden  py-[0px] mt-8 px-[5px] w-full h-[50px]  hover:text-[#066bff]  transition-all duration-200 ease-linear  rounded-md outline-none cursor-pointer font-poppins border-[0.5px] border-solid   border-[#cfcdcd]  font-semibold' >
+               <option value="eng" >English (US)</option>
+              <option value="deu">Deutsch</option>
+              <option value="esp">Espanol</option>
+              <option value="fran">France</option>
+              <option value="port">Portugues</option>
+              </select>
+              <div className='flex mt-[20px] gg:hidden'>
+              <img className=" cursor-pointer align-middle w-[126px] mr-1" src={logo1}alt=""/>
+              <img className="cursor-pointer align-middle w-[126px] " src={logo2} alt="" />
+              </div>
+    
+              <div className='w-full flex mt-4 items-center gap-[24px] gg:hidden mb-[-45px]'>
+              <img src={twitt} className=' cursor-pointer'></img>
+              <img src={fac} className=' cursor-pointer'></img>
+              <img src={ing} className=' cursor-pointer'></img>
+              <img src={link} className=' cursor-pointer'></img>
+              <img src={you} className=' cursor-pointer'></img>
+              </div>
+        </section>
+        </footer>
+      )
+    }
 
 export default Footer;
 
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/Aadi-Maheshwari/Assignment.git
+// git push -u origin main
